@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-2c-N2Y">
+                                <rect key="frame" x="-804" y="0.0" width="1194" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="xts-Yd-OOR">
+                                <rect key="frame" x="75" y="267" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="7ZM-iE-rVg"/>
+                                    <constraint firstAttribute="width" constant="240" id="XO8-GO-kC9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBh-oY-80h">
+                                <rect key="frame" x="80.333333333333329" y="515" width="253.66666666666669" height="65.666666666666629"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="AVOCADOS">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="42" name="Futura-MediumItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemTealColor"/>
+                                <color key="shadowColor" name="ColorBlackTransparentLight"/>
+                                <size key="shadowOffset" width="12" height="-11"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xts-Yd-OOR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4A8-9R-U4e"/>
+                            <constraint firstItem="u4i-2c-N2Y" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="94Q-wG-pRq"/>
+                            <constraint firstAttribute="bottom" secondItem="u4i-2c-N2Y" secondAttribute="bottom" id="KeF-nd-irl"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="u4i-2c-N2Y" secondAttribute="trailing" id="Uf6-iE-JvW"/>
+                            <constraint firstItem="fBh-oY-80h" firstAttribute="top" secondItem="xts-Yd-OOR" secondAttribute="bottom" constant="8" symbolic="YES" id="YPG-Ub-vTA"/>
+                            <constraint firstItem="xts-Yd-OOR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-35" id="a5w-TF-fUe"/>
+                            <constraint firstItem="fBh-oY-80h" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="12" id="p4w-XM-qEd"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="u4i-2c-N2Y" secondAttribute="bottom" id="vpQ-Rw-383"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454" y="46"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avocado" width="883" height="862"/>
+        <image name="background" width="1194" height="834"/>
+        <namedColor name="ColorBlackTransparentLight">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.23000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
