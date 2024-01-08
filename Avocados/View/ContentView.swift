@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Avocados
-//
-//  Created by Jonas Narbutas on 2024-01-02.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,8 +6,8 @@ struct ContentView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 20) {
-                //MARK: - HEADER
                 
+                //MARK: - HEADER
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack (alignment: .top, spacing: 0){
                         ForEach(headers) { item in
@@ -24,6 +17,7 @@ struct ContentView: View {
                     }
                     
                 }
+                
                 //MARK: - DISHES
                 Text("Avocado Dishes")
                     .fontWeight(.bold)

@@ -1,10 +1,3 @@
-//
-//  RipeningView.swift
-//  Avocados
-//
-//  Created by Jonas Narbutas on 2024-01-04.
-//
-
 import SwiftUI
 
 struct RipeningView: View {

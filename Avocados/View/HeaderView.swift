@@ -1,10 +1,3 @@
-//
-//  HeaderView.swift
-//  Avocados
-//
-//  Created by Jonas Narbutas on 2024-01-06.
-//
-
 import SwiftUI
 
 struct HeaderView: View {
@@ -12,7 +5,6 @@ struct HeaderView: View {
     var header: Header
     
     // MARK: - PROPERTIES
-    
     @State private var showHeadline: Bool = false
     
     var slideInAnimation: Animation {
